@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Payment
+
+# Model Form Field configuration
+form: $/creations/paypal/models/payment/fields.yaml
+
+# Model Class name
+modelClass: Creations\PayPal\Models\Payment
+
+# Default redirect location
+defaultRedirect: creations/paypal/payments
+
+# Create page
+create:
+    title: Create Payment
+    redirect: creations/paypal/payments/update/:id
+    redirectClose: creations/paypal/payments
+
+# Update page
+update:
+    title: Edit Payment
+    redirect: creations/paypal/payments
+    redirectClose: creations/paypal/payments
+
+# Preview page
+preview:
+    title: Preview Payment

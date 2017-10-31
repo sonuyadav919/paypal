@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Plan
+
+# Model Form Field configuration
+form: $/creations/paypal/models/plan/fields.yaml
+
+# Model Class name
+modelClass: Creations\PayPal\Models\Plan
+
+# Default redirect location
+defaultRedirect: creations/paypal/plans
+
+# Create page
+create:
+    title: Create Plan
+    redirect: creations/paypal/plans/update/:id
+    redirectClose: creations/paypal/plans
+
+# Update page
+update:
+    title: Edit Plan
+    redirect: creations/paypal/plans
+    redirectClose: creations/paypal/plans
+
+# Preview page
+preview:
+    title: Preview Plan

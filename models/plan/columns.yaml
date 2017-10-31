@@ -1,0 +1,32 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    plan_id:
+        label: Plan ID
+        searchable: true
+    name:
+        label: Plan Name
+        searchable: true
+    type:
+        label: Plan Type
+        searchable: true
+    frequency:
+        label: Frequency
+        searchable: true
+    cycles:
+        label: Cycles
+        searchable: true
+    amount:
+        label: Amount
+        searchable: true
+    currency:
+        label: Currency
+        searchable: true
+    created_at:
+        label: Created At
+        searchable: true

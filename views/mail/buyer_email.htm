@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>{{ date }}</p>
+				<br>
+				<p>Thank you for supporting the National School Climate Center. Your contribution of ${{ amount }} {{ monthly }} allows us to continue supporting schools in promoting and sustaining safe and supportive learning environments for students and educators around the country.</p>
+				<br>
+				{% if monthly %}
+				<p><b> Your monthly donation will be charged every {{day}} of the month.</b></p>
+				<br>
+				{% endif %}
+
+				<p>With your contribution, NSCC will continue to improve learning climates through measurement and research, advocacy and policy, and by providing educational services to schools, districts, and states. It strengthens our ability to help all children develop the social, emotional, and intellectual skills they need to become productive, engaged citizens. Working together, we can reach this vision.</p>
+				<br>
+				<p>Thank you again for your contribution!</p>
+				<br>
+				<p>Sincerely, </p>
+				<p>National School Climate Center </p>
+				<br>
+				<br>
+		 		<br>
+				<p  align="right" style="color:#1B2E7E;" >
+					<b style="font-size:20px">NATIONAL SCHOOL CLIMATE CENTER (NSCC)</b><br>
+					<span style="font-style: italic">Educating hearts and minds, because the Three Rs are not enough<br>
+					341 West 38 th Street, 9 th Floor, New York, NY 10018<br>
+					(T) 212.707.8799 (F) 212.957.6616 www.schoolclimate.org<span>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

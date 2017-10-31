@@ -1,0 +1,10 @@
+{
+    "name": "creations/paypal",
+    "description": "paypal paments package",
+    "type": "library",
+    "require": {
+        "paypal/rest-api-sdk-php": "*"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable"
+}
