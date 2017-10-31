@@ -1,9 +1,11 @@
 # PayPal
 
-- Create webconfig.php on config folder
-	
-	- Add your PayPal details into webconfig.php file
+Create webconfig.php on config folder
+============================================	
 
+	
+	Add your PayPal details into webconfig.php file
+	=========================================================
 	<?php
 
 		return [
@@ -16,11 +18,13 @@
 
 
 
-- Use PayPal Payment Form
+Use PayPal Payment Form
+===============================================
 	
-	- Add [PayPalPayments] into view file at the top of page param.
+	Add [PayPalPayments] into view file at the top of page param.
 
 	Example:
+	===================
 		title = "PayPal Form"
 		url = "/paypal"
 		layout = "default"
@@ -28,8 +32,8 @@
 		[PayPalPayments]
 		==
 
-	- Create donation ammounts array
-
+	Create donation ammounts array
+	========================================================
 		<?php
 			function onStart()
 			{
@@ -86,4 +90,9 @@
 		==
 
 
-	- Use {% component 'PayPalPayments' %} into div or section where you want to append form.
+	Use Component
+	===================================
+	{% component 'PayPalPayments' %}
+
+	Use component into div or section where you want to append PayPal form
+
