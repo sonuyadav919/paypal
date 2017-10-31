@@ -286,14 +286,14 @@ class PayPalPayments extends ComponentBase
     private function createPlan($details)
     {
       $plan = new Plan();
-      $plan->setName($details->title)->setDescription($details->description)->setType('fixed');
+      $plan->setName($details->title)->setDescription($details->description)->setType('INFINITE');
 
       $paymentDefinition = new PaymentDefinition();
       $paymentDefinition->setName('Regular Payments')
                         ->setType('REGULAR')
                         ->setFrequency($details->frequency)
                         ->setFrequencyInterval($details->frequencyInterval)
-                        ->setCycles('12')
+                        // ->setCycles('12')
                         ->setAmount(new Currency(array('value' => $details->price, 'currency' => $details->price_currency)));
 
 
